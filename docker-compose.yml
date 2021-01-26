@@ -1,0 +1,8 @@
+version: "3"
+services:
+    kekw:
+        container_name: kekw-as-a-service
+        image: seriousm4x/kekw-as-a-service:latest
+        ports:
+            - 8000:8000
+        restart: always

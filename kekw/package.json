@@ -1,0 +1,22 @@
+{
+  "name": "kekw-as-a-service",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "FORCE_COLOR=1 node kekw.js",
+    "dev": "nodemon kekw.js"
+  },
+  "dependencies": {
+    "colors": "1.4.0",
+    "mz": "2.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.7"
+  },
+  "author": {
+    "name": "Hugo Muller-Downing",
+    "email": "npmjs@hugo.sx",
+    "url": "hu.md"
+  },
+  "license": "MIT"
+}
