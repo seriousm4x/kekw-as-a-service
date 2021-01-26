@@ -1,6 +1,6 @@
 # KEKW as a service
 
-A lot of thing run "<i>as a service</i>" nowadays. So why not KEKW?
+A lot of things run "<i>as a service</i>" nowadays. So why not KEKW?
 
 ![](kekw.gif)
 
