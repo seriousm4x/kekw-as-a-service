@@ -2,14 +2,10 @@
 
 A lot of things run "<i>as a service</i>" nowadays. So why not KEKW?
 
-![](kekw.gif)
+![](kekw.mp4)
 
 ## Make your terminal KEKW
 
 ```
 curl kekw.services
 ```
-
-## Thanks
-
-[parrot.live](https://github.com/hugomd/parrot.live)
