@@ -10,6 +10,9 @@ app = Flask(__name__)
 
 @app.route("/")
 def kekw():
+    if not "curl" in request.headers["User-Agent"]:
+        return redirect("https://github.com/seriousm4x/kekw-as-a-service")
+
     colors = cycle(["red", "green", "blue", "white",
                    "cyan", "magenta", "yellow"])
 
@@ -20,10 +23,7 @@ def kekw():
                     sleep(0.08)
                     yield "\033[2J\033[3J\033[H" + colored(f.read(), next(colors))
 
-    if "curl" in request.headers["User-Agent"]:
-        return app.response_class(stream_with_context(generate()))
-    else:
-        return redirect("https://github.com/seriousm4x/kekw-as-a-service")
+    return app.response_class(stream_with_context(generate()))
 
 
 app.run(debug=False)
