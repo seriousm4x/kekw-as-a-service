@@ -2,7 +2,7 @@
 
 A lot of things run "<i>as a service</i>" nowadays. So why not KEKW?
 
-![](kekw.mp4)
+![](kekw.gif)
 
 ## Make your terminal KEKW
 
