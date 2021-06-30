@@ -26,4 +26,4 @@ def kekw():
     return app.response_class(stream_with_context(generate()))
 
 
-app.run(debug=False)
+app.run(host="0.0.0.0", port=5000, debug=False)

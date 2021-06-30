@@ -4,8 +4,6 @@ WORKDIR /opt/app
 
 COPY kekw/ .
 
-RUN pip install -r requirements.txt
-
-EXPOSE 5000
+RUN pip install -U pip && pip install -r requirements.txt
 
 CMD ["python", "kekw.py"]
