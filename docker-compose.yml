@@ -4,5 +4,5 @@ services:
         container_name: kekw-as-a-service
         image: seriousm4x/kekw-as-a-service:latest
         ports:
-            - 8000:8000
+            - 5000:5000
         restart: always
