@@ -1,13 +1,9 @@
-FROM node:current-alpine as build
+FROM python:3-alpine
 
-WORKDIR /usr/src/app
-
-COPY kekw/package*.json ./
-
-RUN npm ci --only=production
+WORKDIR /opt/app
 
 COPY kekw/ .
 
-EXPOSE 8000
+RUN pip install -U pip && pip install -r requirements.txt
 
-CMD ["node", "kekw.js", "--color=always"]
+CMD ["python", "kekw.py"]
